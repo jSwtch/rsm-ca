@@ -1,0 +1,11 @@
+/* @custom-media --md-view (min-width: 48em);
+@custom-media --lg-view (min-width: 65em); */
+
+@define-mixin fluidcalc $property,
+$unit,
+$calc-min,
+$calc-max,
+$screen-min,
+$screen-max {
+  $(property): calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+}

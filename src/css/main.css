@@ -1,0 +1,79 @@
+/*
+  You can use import statements to include partials:
+ */
+@import "imports/core/reset.css";
+@import "imports/core/mixins.css";
+@import "imports/spectre/spectre-custom.css";
+
+
+/* 
+  Site variables here
+*/
+:root {
+  --color-pri: red;
+}
+
+/* RELLAX DEMO */
+
+body {
+  font-size: 300px;
+}
+
+.letter {
+  position: absolute;
+}
+
+.letterA {
+  top: 5%;
+  left: 24%;
+}
+
+.letterB {
+  top: 180%;
+  left: 77%;
+}
+
+.letterC {
+  top: 225%;
+  left: 10%;
+}
+
+.letterD {
+  top: 120%;
+  left: 17%;
+}
+
+.shape {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shapeA {
+  background: red;
+  top: 5%;
+  left: 24%;
+}
+
+.shapeB {
+  height: 200px;
+  width: 200px;
+  background: blue;
+  top: 105%;
+  left: 66%;
+}
+
+.shapeC {
+  height: 300px;
+  width: 300px;
+  background: green;
+  top: 136%;
+  left: 28%;
+}
+
+.shapeD {
+  background: black;
+  top: 30%;
+  left: 45%;
+}
