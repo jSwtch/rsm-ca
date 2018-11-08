@@ -1,50 +1,82 @@
 {{ define "main" }}
-<div class="wrapper">
-  <header class="navbar">
-    <section class="ml-2 navbar-section">
-      <a href="..." class="navbar-brand mr-2">RocketSolid</a>
-      <a href="..." class="btn btn-link">Web</a>
-      <a href="..." class="btn btn-link">Design</a>
-    </section>
-    <section class="mr-2 navbar-section">
-      <a href="..."><i class="navbar-brand mr-2 fab fa-twitter"></i></a>
-      <a href="..."><i class="navbar-brand mr-2 fab fa-instagram"></i></a>
-      <a href="..."><i class="navbar-brand mr-2 fab fa-linkedin-in"></i></a>
-    </section>
-  </header>
 
-  <section class="grid">
-    <img class="hero--background img-responsive" src="img/bg-white-brickwork.jpg" alt="...">
-    <div class="hero--title">
-      <h1>
-        <span class="hero--title__style1">Rocket Solid</span>
-        <span class="hero--title__style2">Media</span>
-        <span class="hero--title__style3">Design & Digital<br>Development</span>
-      </h1>
+<main class="grid--main">
+  <section class="grid--section section about">
+    <div class="content">
+      <h2>Hello</h2>
+      <!-- We produce unique on-brand digital assets and experiences. -->
+      <p>RocketSolid is a premium Canadian digital agency. We are a small, focused team, proud to provide elegant code
+        and accessible design. Contact us <a href="#contact">here</a>
+        to start your next project.</p>
     </div>
-    <div class="color-tag color-tag--horizontal rellax" data-rellax-speed="1.2">
-      <div class="color-tag--pink__1"></div>
-      <div class="color-tag--yellow__1"></div>
-      <div class="color-tag--blue__1"></div>
+    <div class="test-image"></div>
+    <div class="color-tag color-tag--1">
+      <div class="color-tag--blue"></div>
+      <div class="color-tag--white"></div>
+      <div class="color-tag--black"></div>
     </div>
   </section>
 
-
-  <div class="test">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam non eos quia voluptatem placeat eius vero,
-      commodi
-      unde fuga temporibus deleniti amet modi reiciendis laudantium laboriosam rem? Quidem deleniti repellendus
-      repudiandae ullam architecto rerum in.</p>
-  </div>
-
-  <footer class="grid footer">
-    <img class="hero--background img-responsive" src="img/bg-bot-white-brickwork.jpg" alt="...">
-    <div class="color-tag color-tag--vertical rellax" data-rellax-speed="-4.8">
-      <div class="color-tag--blue__2"></div>
-      <div class="color-tag--yellow__2"></div>
-      <div class="color-tag--pink__2"></div>
+  <section class="grid--section section services">
+    <div class="content">
+      <h2>How can we help?</h2>
+      <ul>
+        <li>Web Sites</li>
+        <li>Web Apps</li>
+        <li>Branding</li>
+        <li>Copywriting</li>
+        <li>Content Management</li>
+        <li>Marketing Strategy</li>
+        <li>Ads</li>
+        <li>Analytics & SEO</li>
+      </ul>
     </div>
-  </footer>
-</div>
+    <div>
+      <span class="content-span content-span--vertical">ROCKET</span>
+    </div>
+    <div class="color-tag color-tag--2">
+      <div class="color-tag--pink"></div>
+      <div class="color-tag--grey"></div>
+      <div class="color-tag--yellow"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="grid--section section contact">
+    <div class="content">
+      <h2>We are here</h2>
+      <p>We are here to help and discuss your next project by phone <a href="" class="d-inline-block">(587)774-0994</a>
+        or
+        email <a href="" class="d-inline-block">info@rocketsolidmedia.ca</a>.
+      </p>
+
+      <form action="">
+        <div class="form-group">
+          <label class="form-label" for="input-name">Name</label>
+          <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="input--phone-number">Phone Number</label>
+          <input class="form-input" type="text" id="input-example-1" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="input--message">Message</label>
+          <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+        </div>
+        <div class="input-group">
+
+          <button class="btn btn-primary">Send</button>
+        </div>
+      </form>
+
+    </div>
+    <span class="content-span content-span--horizontal">SOLID</span>
+    <div class="color-tag color-tag--3">
+      <div class="color-tag--blue"></div>
+      <div class="color-tag--pink"></div>
+      <div class="color-tag--yellow"></div>
+    </div>
+  </section>
+
+</main>
 
 {{end}}
