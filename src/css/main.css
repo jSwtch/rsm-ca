@@ -2,8 +2,8 @@
   You can use import statements to include partials:
  */
 @import "imports/core/reset.css";
-@import "imports/core/mixins.css";
 @import "imports/spectre/spectre-custom.css";
+@import "imports/core/mixins.css";
 @import "imports/site/color-tags.css";
 @import "../fonts/leaguespartan-stylesheet.css";
 @import "../fonts/chunkfive-stylesheet.css";
@@ -24,6 +24,26 @@
   --color-whi: #ffffff;
   --color-gre: #8b8f98;
   --color-grl: #f4f5f5;
+}
+
+/* @define-mixin fluidcalc $property,
+$unit,
+$calc-min,
+$calc-max,
+$screen-min,
+$screen-max {
+  $(property): calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+} */
+
+.test {
+  @mixin fluidcalc font-size,
+  1rem,
+  1,
+  2,
+  26.25,
+  64;
+  /* font-size: calc(16*1px + (32 - 16)*(100vw - 320*1px)/(900 - 320)); */
+
 }
 
 .wrapper {
@@ -80,7 +100,16 @@
   text-align: center;
 }
 
-.hero--title__style1 {
+/* .hero--title-text {
+  @mixin fluidcalc font-size,
+  1px,
+  16,
+  28,
+  32,
+  40;
+} */
+
+.hero--title-text__style1 {
   display: block;
   line-height: 0.618em;
   /* line-height: 1em; */
@@ -89,7 +118,7 @@
   font-size: 0.76em;
 }
 
-.hero--title__style2 {
+.hero--title-text__style2 {
   display: block;
   /* font-size: 1.8em; */
   font-size: 1.4em;
@@ -98,7 +127,7 @@
   text-transform: uppercase;
 }
 
-.hero--title__style3 {
+.hero--title-text__style3 {
   display: block;
   /* font-size: 0.381924em; */
   font-size: 0.32em;
@@ -129,11 +158,9 @@
   grid-column: 1 / span 3;
   margin-top: -20%;
   margin-bottom: -1px;
-  background-image: linear-gradient(
-    to bottom,
+  background-image: linear-gradient(to bottom,
     rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1)
-  );
+    rgba(0, 0, 0, 1));
   /* background: deeppink; */
 }
 

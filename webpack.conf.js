@@ -3,17 +3,21 @@ import path from "path";
 
 export default {
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader?name=/[hash].[ext]"
       },
-      {test: /\.json$/, loader: "json-loader"},
+      {
+        test: /\.json$/,
+        loader: "json-loader"
+      },
       {
         loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        query: {
+          cacheDirectory: true
+        }
       }
     ]
   },
@@ -33,5 +37,5 @@ export default {
     publicPath: "/",
     filename: "[name].js"
   },
-  externals:  [/^vendor\/.+\.js$/]
+  externals: [/^vendor\/.+\.js$/]
 };

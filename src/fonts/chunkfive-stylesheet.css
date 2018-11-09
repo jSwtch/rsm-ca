@@ -7,5 +7,11 @@
     url('Chunkfive-webfont.svg') format('svg');
   font-weight: bold;
   font-style: normal;
-
 }
+
+/* @font-face {
+  font-family: 'Chunkfive';
+  src: url('Chunkfive-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+} */
