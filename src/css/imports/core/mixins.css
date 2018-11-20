@@ -6,6 +6,43 @@ $unit,
 $calc-min,
 $calc-max,
 $screen-min,
-$screen-max {
-  $(property): calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+$screen-max,
+$media-min,
+$media-max {
+
+  $(property): calc($calc-min * $unit);
+
+  @media screen and (min-width: $media-min) {
+    $(property): calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+  }
+
+  @media screen and (min-width: $media-max) {
+    $(property): calc($calc-max * $unit);
+  }
+}
+
+@define-mixin fluidpadding--hero $unit,
+$top-min,
+$top-max,
+$sides-min,
+$sides-max,
+$bot-min,
+$bot-max,
+$screen-min,
+$screen-max,
+$media-min,
+$media-max {
+
+  padding: calc($top-min * $unit) calc($sides-min * $unit) calc($bot-min * $unit);
+
+  @media screen and (min-width: $media-min) {
+    padding-top: calc($top-min*$unit + ($top-max - $top-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+    padding-left: calc($sides-min*$unit + ($sides-max - $sides-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+    padding-right: calc($sides-min*$unit + ($sides-max - $sides-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+    padding-bottom: calc($bot-min*$unit + ($bot-max - $bot-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+  }
+
+  @media screen and (min-width: $media-max) {
+    padding: calc($top-max * $unit) calc($sides-max * $unit) calc($bot-max * $unit);
+  }
 }

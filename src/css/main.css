@@ -5,16 +5,10 @@
 @import "imports/spectre/spectre-custom.css";
 @import "imports/core/mixins.css";
 @import "imports/site/color-tags.css";
+@import "imports/site/footer.css";
+@import "imports/site/hero.css";
 @import "../fonts/leaguespartan-stylesheet.css";
 @import "../fonts/chunkfive-stylesheet.css";
-
-/*  
-  Site variables here
-*/
-/* * {
-  font-family: 'Chunkfive';
-  font-family: 'League Spartan';
-} */
 
 :root {
   --color-pnk: #ff4b9b;
@@ -26,348 +20,159 @@
   --color-grl: #f4f5f5;
 }
 
-/* @define-mixin fluidcalc $property,
-$unit,
-$calc-min,
-$calc-max,
-$screen-min,
-$screen-max {
-  $(property): calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
-} */
-
-.test {
-  @mixin fluidcalc font-size,
-  1rem,
-  1,
-  2,
-  26.25,
-  64;
-  /* font-size: calc(16*1px + (32 - 16)*(100vw - 320*1px)/(900 - 320)); */
-
+* {
+  /* transition: all 0.3 ease; */
 }
 
 .wrapper {
+  min-width: 320px;
   max-width: 980px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
-
-.grid--hero {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  grid-template-rows: 1fr 1fr max-content 1fr 1fr 1fr;
-  grid-column-gap: 0.786em;
-  grid-row-gap: 0.786em;
+  box-shadow: 0.25em 0.25em 2em 0.25em rgba(0, 0, 0, 0.145865);
 }
 
 .grid--main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  /* grid-template-rows: max-content max-content max-content; */
+  grid-template-rows: max-content max-content max-content max-content;
   grid-row-gap: 0.786em;
   margin: 0.786em 0;
+
   /* background: var(--color-gre); */
+  @media screen and (min-width: 23.5em) {
+    grid-template-rows: 1fr max-content 1fr max-content 1fr;
+  }
 }
 
 .grid--section {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
-  grid-template-rows: 1fr 1fr max-content 1fr 1fr 1fr;
-  grid-column-gap: 0.786em;
-  grid-row-gap: 0.786em;
-  background: white;
-}
-
-.hero--background {
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 6;
-  /* min-width: 480px; */
-}
-
-.hero--title {
-  grid-column: 2;
-  grid-row: 3;
-  background: black;
-  color: white;
-  border-radius: 0.618em;
-  padding: 1.6em 1em 0.6em 1em;
-  /* margin-right: 2em; */
-  margin-right: 1em;
-  margin-bottom: 2em;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.618);
-  text-align: center;
-}
-
-/* .hero--title-text {
-  @mixin fluidcalc font-size,
-  1px,
-  16,
-  28,
-  32,
-  40;
-} */
-
-.hero--title-text__style1 {
-  display: block;
-  line-height: 0.618em;
-  /* line-height: 1em; */
-  font-family: "League Spartan";
-  /* font-size: 1em; */
-  font-size: 0.76em;
-}
-
-.hero--title-text__style2 {
-  display: block;
-  /* font-size: 1.8em; */
-  font-size: 1.4em;
-  line-height: 1em;
-  font-family: "Chunkfive";
-  text-transform: uppercase;
-}
-
-.hero--title-text__style3 {
-  display: block;
-  /* font-size: 0.381924em; */
-  font-size: 0.32em;
-  line-height: 1em;
-  font-family: "League Spartan";
-}
-
-.test-image {
-  grid-column: 1 / span 3;
-  grid-row: 5 / span 2;
-  background: grey;
-}
-
-.footer {
-  height: 50px;
-  background: black;
-  position: relative;
-}
-
-.copyright {
-  bottom: 4px;
-  left: 8px;
-  position: absolute;
-}
-
-.black-gradient {
-  grid-row: 6;
-  grid-column: 1 / span 3;
-  margin-top: -20%;
-  margin-bottom: -1px;
-  background-image: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1));
-  /* background: deeppink; */
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .section {
-  width: 100%;
-  /* border: 1px solid black; */
-
-  /* height: calc(calc(1335/980*100/1.618)vw); */
-  height: calc(1335 / 980 * 100 * 1vw);
-
-  /* color: white;
-  background: deeppink; */
   position: relative;
   overflow: hidden;
-  /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.145865); */
+  max-height: 52em;
+
+  /* background: rgba(244, 245, 245, 1); */
+  /* max-height: calc(1335/980*100/1.618*1vw); */
+  @media screen and (min-width: 23.5em) {
+    height: calc(1335 / 980 * 100 * 1.2 * 1vw);
+  }
+
+  @media screen and (min-width: 61.25em) {
+    height: 52em;
+  }
+}
+
+.section--services,
+.section--contact {
+  @mixin fluidcalc margin-top,
+  1em,
+  1,
+  3.2,
+  20,
+  23.5,
+  20em,
+  23.5em;
+
+  @mixin fluidcalc margin-bottom,
+  1em,
+  1,
+  3.2,
+  20,
+  23.5,
+  20em,
+  23.5em;
+
+  @media screen and (min-width: 23.5em) {
+    margin: 0;
+  }
 }
 
 .content {
-  width: 78.6129%;
-  /* height: 61.8%; */
-  box-shadow: 0.25em 0.25em 2em 0.25em rgba(0, 0, 0, 0.145865);
-  border-radius: 0.618em;
-  margin-top: 14.59%;
-  margin-left: 4.26%;
   grid-column: 1 / span 3;
-  grid-row: 1 / span 4;
-  padding: 2em;
+  grid-row: 1 / span 5;
+  justify-self: center;
+  align-self: center;
+  padding: 1.414em;
+  line-height: 2.618;
+  /* background: rgba(244, 245, 245, 0.15); */
+  z-index: 10;
+  width: 100%;
+
+  @media screen and (min-width: 23.5em) {
+    width: 90%;
+    max-width: 768px;
+    border-radius: 0.618em;
+    padding: 2em;
+    box-shadow: 0.25em 0.25em 2em 0.25em rgba(0, 0, 0, 0.145865);
+
+  }
+
+  @media screen and (min-width: 61.25em) {
+    width: 78.6129%;
+    padding: 4.618em;
+    /* margin-left: 4.26%;
+    margin-top: 4.26%; */
+    /* margin-bottom: 4.26%; */
+    /* margin-top: 14.59%; */
+  }
+}
+
+.content--services,
+.content--contact {}
+
+.content__services-list {
+  list-style-type: none;
+  margin-left: 0;
+  /* text-align: end; */
+  /* margin-right: 6em; */
+}
+
+.content__title {
+  /* font-family: "Chunkfive"; */
 }
 
 .content-span {
-  position: absolute;
   user-select: none;
-}
-
-.content-span--horizontal {
+  font-family: "League Spartan";
+  /* font-family: "Chunkfive"; */
   font-size: 8em;
-  bottom: -0.618em;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .content-span--vertical {
-  font-size: 8em;
-  right: -1.618em;
-  top: 50%;
-  transform: translate(0, -50%) rotate(-90deg);
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  text-transform: uppercase;
+  transform: translate(49%, 50%) rotate(-90deg);
+  @mixin fluidcalc font-size,
+  1em,
+  6,
+  12,
+  30,
+  64,
+  30em,
+  64em;
+  /* @mixin fluidcalc font-size, 1em, 4.8, 7, 30, 64, 30em, 64em; */
 }
 
-/* 
-
-
-COLOR TAG CSS
-
-
-*/
-
-/* color tag for header */
-.color-tag--head {
-  grid-row: 5;
-  grid-column: 1 / span 3;
-  justify-self: end;
-}
-
-.color-tag--head div:nth-child(1) {
-  width: 2em;
-  height: 2em;
-}
-
-.color-tag--head div:nth-child(2) {
-  width: 2em;
-  height: 2em;
-}
-
-.color-tag--head div:nth-child(3) {
-  width: 12em;
-  height: 2em;
-}
-
-/* color tag for 1st section */
-.color-tag--1 {
-  flex-direction: column;
-  grid-column: 3;
-  grid-row: 2 / span 5;
-  justify-self: end;
-  align-self: start;
-  margin-top: 4em;
-  margin-right: 4em;
-}
-
-.color-tag--1 div:nth-child(1) {
-  width: 2em;
-  height: 7em;
-}
-
-.color-tag--1 div:nth-child(2) {
-  width: 2em;
-  height: 2em;
-}
-
-.color-tag--1 div:nth-child(3) {
-  width: 2em;
-  height: 7em;
-}
-
-/* color tag for 2nd section */
-.color-tag--2 {
-  flex-direction: column;
-  grid-column: 3;
-  grid-row: 1 / span 6;
-  justify-self: end;
-  align-self: start;
-  margin-top: 4em;
-  margin-right: 4em;
-}
-
-.color-tag--2 div:nth-child(1) {
-  width: 2em;
-  height: 12em;
-}
-
-.color-tag--2 div:nth-child(2) {
-  width: 2em;
-  height: 2em;
-}
-
-.color-tag--2 div:nth-child(3) {
-  width: 2em;
-  height: 2em;
-}
-
-/* color tag for 3rd section */
-.color-tag--3 {
-  flex-direction: column;
-  grid-column: 3;
-  grid-row: 1 / span 6;
-  justify-self: end;
-  align-self: start;
-  margin-top: 4em;
-  margin-right: 4em;
-}
-
-.color-tag--3 div:nth-child(1) {
-  width: 5em;
-  height: 2em;
-}
-
-.color-tag--3 div:nth-child(2) {
-  width: 5em;
-  height: 2em;
-}
-
-.color-tag--3 div:nth-child(3) {
-  width: 5em;
-  height: 2em;
-}
-
-/* color tag for footer */
-.color-tag--foot {
-  flex-direction: column;
-  grid-column: 3;
-  grid-row: 1 / span 6;
-  justify-self: end;
-  align-self: start;
-  /* margin-top: -200%; */
-  margin-right: 4em;
-}
-
-.color-tag--foot div:nth-child(1) {
-  width: 2em;
-  height: 12em;
-}
-
-.color-tag--foot div:nth-child(2) {
-  width: 2em;
-  height: 2em;
-}
-
-.color-tag--foot div:nth-child(3) {
-  width: 2em;
-  height: 2em;
-}
-
-/* General */
-.color-tag {
-  display: flex;
-}
-
-.color-tag--pink {
-  background: var(--color-pnk);
-}
-
-.color-tag--blue {
-  background: var(--color-blu);
-}
-
-.color-tag--yellow {
-  background: var(--color-yel);
-}
-
-.color-tag--white {
-  background: var(--color-whi);
-}
-
-.color-tag--black {
-  background: var(--color-bla);
-}
-
-.color-tag--grey {
-  background: var(--color-gre);
+.content-span--horizontal {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  transform: translate(0, 50%);
+  @mixin fluidcalc font-size,
+  1em,
+  8,
+  18,
+  30,
+  64,
+  30em,
+  64em;
 }

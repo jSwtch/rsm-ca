@@ -1,0 +1,76 @@
+.grid--hero {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 1fr 1fr max-content 1fr 1fr 1fr;
+  grid-column-gap: 0.786em;
+  grid-row-gap: 0.786em;
+}
+
+.hero--background {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 6;
+  /* min-width: 480px; */
+}
+
+.hero--title {
+  grid-column: 2;
+  grid-row: 3;
+  background: black;
+  color: white;
+  border-radius: 0.618em;
+  /* padding: 1.618em 1em 0.618em; */
+  margin-right: 1em;
+  margin-bottom: 2em;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.618);
+  text-align: center;
+
+  @mixin fluidpadding--hero 1em,
+  1.618,
+  3.24,
+  1,
+  1.618,
+  0.618,
+  1,
+  30,
+  64,
+  30em,
+  64em;
+}
+
+.hero--title-text {
+  @mixin fluidcalc font-size,
+  1em,
+  2.5,
+  4.5,
+  30,
+  64,
+  30em,
+  64em;
+}
+
+.hero--title-text__style1 {
+  display: block;
+  line-height: 0.618em;
+  /* line-height: 1em; */
+  max-height: calc(1335 / 980 * 100 / 1.618 * 1vw);
+  /* font-size: 1em; */
+  font-size: 0.76em;
+  font-family: "League Spartan";
+}
+
+.hero--title-text__style2 {
+  display: block;
+  /* font-size: 1.8em; */
+  font-size: 1.4em;
+  line-height: 1em;
+  font-family: "Chunkfive";
+  text-transform: uppercase;
+}
+
+.hero--title-text__style3 {
+  display: block;
+  /* font-size: 0.381924em; */
+  font-size: 0.32em;
+  line-height: 1em;
+  font-family: "League Spartan";
+}
