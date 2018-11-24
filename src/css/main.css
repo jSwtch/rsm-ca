@@ -20,10 +20,6 @@
   --color-grl: #f4f5f5;
 }
 
-* {
-  /* transition: all 0.3 ease; */
-}
-
 .wrapper {
   min-width: 320px;
   max-width: 980px;
@@ -39,6 +35,8 @@
   grid-template-rows: max-content max-content max-content max-content;
   grid-row-gap: 0.786em;
   margin: 0.786em 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   /* background: var(--color-gre); */
   @media screen and (min-width: 23.5em) {
@@ -54,7 +52,7 @@
 
 .section {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-height: 52em;
 
   /* background: rgba(244, 245, 245, 1); */
@@ -98,19 +96,25 @@
   grid-row: 1 / span 5;
   justify-self: center;
   align-self: center;
-  padding: 1.414em;
   line-height: 2.618;
-  /* background: rgba(244, 245, 245, 0.15); */
-  z-index: 10;
+  background: rgba(244, 245, 245, 0.1618);
+  /* z-index: 10; */
   width: 100%;
+  @mixin fluidcalc padding,
+  1em,
+  1.414,
+  4.618,
+  23.5,
+  61.25,
+  23.5em,
+  61.25em;
 
   @media screen and (min-width: 23.5em) {
     width: 90%;
     max-width: 768px;
     border-radius: 0.618em;
-    padding: 2em;
+    /* padding: 2em; */
     box-shadow: 0.25em 0.25em 2em 0.25em rgba(0, 0, 0, 0.145865);
-
   }
 
   @media screen and (min-width: 61.25em) {
@@ -142,6 +146,12 @@
   font-family: "League Spartan";
   /* font-family: "Chunkfive"; */
   font-size: 8em;
+}
+
+.form-group textarea {
+  resize: vertical;
+  max-height: 200px;
+  min-height: 100px;
 }
 
 .content-span--vertical {

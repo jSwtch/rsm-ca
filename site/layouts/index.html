@@ -15,11 +15,7 @@
       </p>
     </div>
 
-    <div
-      class="color-tag color-tag--1 rellax"
-      data-rellax-speed="1.2"
-      data-rellax-percentage="0.5"
-    >
+    <div class="color-tag color-tag--1 rellax" data-rellax-speed="-36.8" data-rellax-percentage=".6">
       <div class="color-tag--blue"></div>
       <div class="color-tag--white"></div>
       <div class="color-tag--black"></div>
@@ -34,37 +30,21 @@
     <div class="content content--services">
       <h2 class="content__title">Our Services</h2>
       <ul class="content__services-list">
+
+        {{ range (where .Pages "Section" "services") }}
         <li>
-          <a href="./services/websites"> <h3>Web Sites</h3> </a>
+          <a href="{{ .URL }}">
+            <h3>{{ .Title }}</h3>
+          </a>
         </li>
-        <li>
-          <a href="./services/webapps"> <h3>Web Apps</h3> </a>
-        </li>
-        <li>
-          <a href="./services/branding"> <h3>Branding</h3> </a>
-        </li>
-        <li>
-          <a href="./services/copywriting"> <h3>Copywriting</h3> </a>
-        </li>
-        <li>
-          <a href="./services/contentmanagement"> <h3>Content Strategy</h3> </a>
-        </li>
-        <li>
-          <a href="./services/ads"> <h3>Online Ads</h3> </a>
-        </li>
-        <li>
-          <a href="./services/SEO"> <h3>SEO & Analytics</h3> </a>
-        </li>
+        {{ end }}
+
       </ul>
     </div>
 
     <span class="content-span content-span--vertical">Rocket</span>
 
-    <div
-      class="color-tag color-tag--2 rellax"
-      data-rellax-speed="1.2"
-      data-rellax-percentage="0.5"
-    >
+    <div class="color-tag color-tag--2 rellax" data-rellax-speed="14.0" data-rellax-percentage="0.5">
       <div class="color-tag--pink"></div>
       <div class="color-tag--grey"></div>
       <div class="color-tag--yellow"></div>
@@ -82,32 +62,15 @@
       <form action="">
         <div class="form-group">
           <label class="form-label" for="input-name">Name</label>
-          <input
-            class="form-input"
-            type="text"
-            id="input-example-1"
-            placeholder="Name"
-          />
+          <input class="form-input" type="text" id="form-name" placeholder="Name" />
         </div>
         <div class="form-group">
-          <label class="form-label" for="input--phone-number"
-            >Phone Number</label
-          >
-          <input
-            class="form-input"
-            type="text"
-            id="input-example-1"
-            placeholder="Phone Number"
-          />
+          <label class="form-label" for="input--phone-number">Phone Number</label>
+          <input class="form-input" type="text" id="form-number" placeholder="Phone Number" />
         </div>
         <div class="form-group">
           <label class="form-label" for="input--message">Message</label>
-          <textarea
-            class="form-input"
-            id="input-example-3"
-            placeholder="Textarea"
-            rows="3"
-          ></textarea>
+          <textarea class="form-input" id="form-message" placeholder="Textarea" rows="3"></textarea>
         </div>
         <div class="input-group">
           <button class="btn btn-primary">Send</button>
@@ -116,11 +79,7 @@
     </div>
     <span class="content-span content-span--horizontal">SOLID</span>
 
-    <div
-      class="color-tag color-tag--3 rellax"
-      data-rellax-speed="1.2"
-      data-rellax-percentage="0.5"
-    >
+    <div class="color-tag color-tag--3 rellax" data-rellax-speed="1.2" data-rellax-percentage="0.5">
       <div class="color-tag--blue"></div>
       <div class="color-tag--pink"></div>
       <div class="color-tag--yellow"></div>

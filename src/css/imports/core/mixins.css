@@ -46,3 +46,12 @@ $media-max {
     padding: calc($top-max * $unit) calc($sides-max * $unit) calc($bot-max * $unit);
   }
 }
+
+@define-mixin colortagtone $hsla-h,
+$hsla-s,
+$hsla-l,
+$hsla-a {
+
+  box-shadow: 0.1545em 0.1545em 2.828em 0.1545em hsla($hsla-h, calc($hsla-s*0.8866), calc($hsla-l*0.8866), calc($hsla-a*0.437));
+  /* box-shadow: 0.0955em 0.0955em 2.828em 0.0955em hsla($hsla-h, calc($hsla-s*0.8866), calc($hsla-l*0.8866), calc($hsla-a*1)); */
+}
