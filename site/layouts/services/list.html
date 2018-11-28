@@ -1,7 +1,29 @@
 {{ define "main" }}
 
-THIS IS THE LIST
-{{ .Content }}
+<section class="grid--section section section--services">
+  <div class="content content--services">
+    <h2 class="content__title">Our Services</h2>
+    <ul class="content__services-list">
+
+      {{ range (where .Pages "Section" "services") }}
+      <li>
+        <a href="{{ .URL }}">
+          <h3>{{ .Title }}</h3>
+        </a>
+      </li>
+      {{ end }}
+
+    </ul>
+  </div>
+
+  <span class="content-span content-span--vertical">Rocket</span>
+
+  <div class="color-tag color-tag--2 rellax" data-rellax-speed="14.0" data-rellax-percentage="0.5">
+    <div class="color-tag--pink"></div>
+    <div class="color-tag--grey"></div>
+    <div class="color-tag--yellow"></div>
+  </div>
+</section>
 
 
 {{end}}
