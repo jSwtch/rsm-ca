@@ -23,7 +23,10 @@
   </section>
 
   <section class="">
-    <img class="img-responsive" src="img/comp1024102480.jpg" alt="" />
+    <picture>
+      <source class="img-responsive" media="(min-width: 768px)" srcset="./img/lightbulb102457680.jpg">
+      <img class="img-responsive" src="./img/lightbulb1024102480.jpg" alt="">
+    </picture>
   </section>
 
   <section class="grid--section section section--services">
@@ -52,14 +55,17 @@
   </section>
 
   <section class="">
-    <img class="img-responsive" src="img/comp1024102480.jpg" alt="" />
+    <picture>
+      <source class="img-responsive" media="(min-width: 768px)" srcset="./img/gems102457680.jpg">
+      <img class="img-responsive" src="./img/gems1024102480.jpg" alt="">
+    </picture>
   </section>
 
   <section id="contact" class="grid--section section section--contact">
     <div class="content content--contact">
       <h2 class="content__title">Contact Us</h2>
 
-      <form action="">
+      <form name="home-contact" method="POST" netlify>
         <div class="form-group">
           <label class="form-label" for="input-name">Name</label>
           <input class="form-input" type="text" id="form-name" placeholder="Name" />
@@ -73,7 +79,7 @@
           <textarea class="form-input" id="form-message" placeholder="Textarea" rows="3"></textarea>
         </div>
         <div class="input-group">
-          <button class="btn btn-primary">Send</button>
+          <button class="btn btn-primary" type="submit">Send</button>
         </div>
       </form>
     </div>

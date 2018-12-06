@@ -20,6 +20,17 @@
   --color-grl: #f4f5f5;
 }
 
+.slogan {
+  display: none;
+
+  @media screen and (min-width: 48em) {
+    display: inline;
+
+    margin: 0;
+  }
+
+}
+
 .wrapper {
   min-width: 320px;
   max-width: 980px;
@@ -31,20 +42,20 @@
 
 .grid--main {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: max-content max-content max-content max-content;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: max-content max-content max-content max-content max-content;
   grid-row-gap: 0.786em;
   margin: 0.786em 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
 
-  /* background: var(--color-gre); */
+
   @media screen and (min-width: 23.5em) {
     grid-template-rows: 1fr max-content 1fr max-content 1fr;
   }
 }
 
 .grid--section {
+  overflow-y: hidden;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -163,7 +174,7 @@
   @mixin fluidcalc font-size,
   1em,
   6,
-  12,
+  9.8,
   30,
   64,
   30em,
