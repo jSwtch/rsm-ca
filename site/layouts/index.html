@@ -65,44 +65,24 @@
     <div class="content content--contact">
       <h2 class="content__title">Contact Us</h2>
 
-      <!-- <form name="home-contact" method="POST" data-netlify="true">
+      <form name="home-contact" method="POST" data-netlify="true">
         <div class="form-group">
           <label class="form-label" for="name">Name</label>
-          <input class="form-input" type="text" id="name" placeholder="Name" />
+          <input class="form-input" type="text" name="name" placeholder="Name" />
         </div>
         <div class="form-group">
           <label class="form-label" for="phone">Phone Number</label>
-          <input class="form-input" type="tel" id="phone" placeholder="Phone Number" />
+          <input class="form-input" type="tel" name="phone" placeholder="Phone Number" />
         </div>
         <div class="form-group">
           <label class="form-label" for="message">Message</label>
-          <textarea class="form-input" id="message" placeholder="Textarea" rows="3"></textarea>
+          <textarea class="form-input" name="message" placeholder="Textarea" rows="3"></textarea>
         </div>
         <div class="input-group">
           <button class="btn btn-primary" type="submit">Send</button>
         </div>
-      </form> -->
-
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
       </form>
+
     </div>
     <span class="content-span content-span--horizontal">SOLID</span>
 
