@@ -14,6 +14,6 @@ How do analytics tie into all this? With analytics, we can capture user-generate
 
 ## What Makes Good Search Engine Optimization?
 
-Search engines like Google, Bing, Yahoo, and Duck Duck Go continuously crawl the internet and index pages, they then rank pages specifically based on keywords usage - then selectively show these results to visitors. The purpose of SEO (search engine optimization is to help search engines find your content. This is achieved with unique and accurate age titles, proper use of meta tags, correct use of HTML semantics, clear navigation, clean URLs, and a mobile friend's responsive design.
+Search engines like Google, Bing, Yahoo, and Duck Duck Go continuously crawl the internet and index pages, they then rank pages specifically based on keywords usage - then selectively show these results to visitors. The purpose of SEO (search engine optimization is to help search engines find your content. This is achieved with unique and accurate page titles, proper use of meta tags, correct use of HTML semantics, clear navigation, clean URLs, and a mobile friend's responsive design.
 
 Your specific content can be optimized with a strong body copy, alt tags for images, and careful use of keywords. Having a mobile-friendly site is essential for success, and search engines will rank a site poorly if it is not deemed "mobile ready". Website promotions can help increase your website reach through targeted online ads in popular mediums.
