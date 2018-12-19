@@ -197,3 +197,9 @@
   30em,
   64em;
 }
+
+.netlify--honeypot {
+  visibility: hidden;
+  height: 1px;
+  margin: -1px 0 0 0 !important;
+}

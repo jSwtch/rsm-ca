@@ -63,8 +63,11 @@
   <section id="contact" class="grid--section section section--contact">
     <div class="content content--contact">
       <h2 class="content__title">Contact Us</h2>
-
-      <form name="home-contact" method="POST" data-netlify="true">
+      <form name="home-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <div class="netlify--honeypot form-group">
+          <label class="form-label">Name</label>
+          <input class="form-input" name="bot-field" placeholder="Leave this field empty" />
+        </div>
         <div class="form-group">
           <label class="form-label" for="name">Name</label>
           <input class="form-input" type="text" name="name" placeholder="Name" required />
