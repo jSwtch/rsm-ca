@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-<main class="grid--main">
-  <section class="grid--section section">
+<main class="main main__home">
+  <section class="section section__home section__single">
     <div class="content">
       <h2 class="content__title">Hello</h2>
       <p>
@@ -30,10 +30,10 @@
     </picture>
   </section>
 
-  <section class="grid--section section section--services">
-    <div class="content content--services">
+  <section class="section section__home section__single">
+    <div class="content">
       <h2 class="content__title">Our Services</h2>
-      <ul class="content__services-list">
+      <ul class="content__list">
         {{ range (where .Pages "Section" "services") }}
         <li>
           <a href="{{ .URL }}">
@@ -60,10 +60,10 @@
     </picture>
   </section>
 
-  <section id="contact" class="grid--section section section--contact">
+  <section id="contact" class="section section__home section__single">
     <div class="content content--contact">
       <h2 class="content__title">Contact Us</h2>
-      <form name="home-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="contact--home" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <div class="netlify--honeypot form-group">
           <label class="form-label">Name</label>
           <input class="form-input" name="bot-field" placeholder="Leave this field empty" />

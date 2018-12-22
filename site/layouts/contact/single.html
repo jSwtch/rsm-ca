@@ -1,51 +1,54 @@
 {{ define "main" }}
 
-<section id="contact" class="grid--section section section--contact">
-  <div class="content content--contact">
-    <h2 class="content__title">Contact Us</h2>
-    <form name="home-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <div class="netlify--honeypot form-group">
-        <label class="form-label">Name</label>
-        <input class="form-input" name="bot-field" placeholder="Leave this field empty" />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="name">Name</label>
-        <input class="form-input" type="text" name="name" placeholder="Full Name" required />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="phone">Email</label>
-        <input class="form-input" type="email" name="email" placeholder="Email Address" required />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="phone">Phone</label>
-        <input class="form-input" type="tel" name="phone" placeholder="Phone Number" required />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="select-one">Services</label>
-        <select class="form-select" name="select-one" required>
-          <option selected disabled>I am interested in...</option>
-          <option value="Design">Design</option>
-          <option value="Development">Development</option>
-          <option value="Strategy">Strategy</option>
-          <option value="All">Everything</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="message">Message</label>
-        <textarea class="form-input" name="message" placeholder="Text message" rows="3"></textarea>
-      </div>
-      <div class="input-group">
-        <button class="btn btn-primary" type="submit">Send</button>
-      </div>
-    </form>
-  </div>
-  <span class="content-span content-span--horizontal">SOLID</span>
+<div class="main">
+  <section id="contact" class="section section__single section__contact">
+    <div class="content">
 
-  <div class="color-tag color-tag--3 rellax" data-rellax-speed="1.2" data-rellax-percentage="0.5">
-    <div class="color-tag--blue"></div>
-    <div class="color-tag--pink"></div>
-    <div class="color-tag--yellow"></div>
-  </div>
-</section>
+      <h2 class="content__title">Contact Us</h2>
+      <form name="contact--main" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <div class="netlify--honeypot form-group">
+          <label class="form-label">Name</label>
+          <input class="form-input" name="bot-field" placeholder="Leave this field empty" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" type="text" name="name" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Email</label>
+          <input class="form-input" type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone</label>
+          <input class="form-input" type="tel" name="phone" placeholder="Phone Number" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="select-one">Services</label>
+          <select class="form-select" name="select-one" required>
+            <option class="placeholder" disabled selected>I am interested in...</option>
+            <option value="Design">Design</option>
+            <option value="Development">Development</option>
+            <option value="Strategy">Strategy</option>
+            <option value="All">Everything</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input" name="message" placeholder="My message" rows="3"></textarea>
+        </div>
+        <div class="input-group">
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <span class="content-span content-span--horizontal">SOLID</span>
+
+    <div class="color-tag color-tag--3 rellax" data-rellax-speed="1.2" data-rellax-percentage="0.5">
+      <div class="color-tag--blue"></div>
+      <div class="color-tag--pink"></div>
+      <div class="color-tag--yellow"></div>
+    </div>
+  </section>
+</div>
 
 {{end}}
