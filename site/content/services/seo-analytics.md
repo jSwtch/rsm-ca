@@ -18,4 +18,4 @@ With analytics, we can capture user-generated moments for analysis, and later op
 
 ## Next Steps
 
-If you are interested in improving your search engine rank in an authentic manner contact us here. We can implement SEO on a new site, or any existing one. We have a proven "design to development" workflow, and we promise to get the results you expect. We build professional custom websites and are happy to answer any questions you may have.
+If you are interested in improving your search engine rank in an authentic manner contact us [here](/contact). We can implement SEO on a new site, or any existing one. We have a proven "design to development" workflow, and we promise to get the results you expect. We build professional custom websites and are happy to answer any questions you may have.

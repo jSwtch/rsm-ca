@@ -33,4 +33,4 @@ Our brand package will deliver a complete identity for your enterprise along wit
 
 ## Get Started Now
 
-We have a proven idea to actuality workflow that we leverage to deliver the results you want with the quality you expect. We are excited to work closely with you and create an identity to match your vision. To get started on a branding package for your new venture contact us here.
+We have a proven idea to actuality workflow that we leverage to deliver the results you want with the quality you expect. We are excited to work closely with you and create an identity to match your vision. To get started on a branding package for your new venture contact us [here](/contact).

@@ -140,7 +140,12 @@
 
 .content-span {
   user-select: none;
-  font-family: "League Spartan";
+  font-family: "League Spartan",
+    'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
   /* font-family: "Chunkfive"; */
   font-size: 8em;
   display: none;

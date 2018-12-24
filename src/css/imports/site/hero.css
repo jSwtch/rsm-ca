@@ -55,7 +55,7 @@
   max-height: calc(1335 / 980 * 100 / 1.618 * 1vw);
   /* font-size: 1em; */
   font-size: 0.76em;
-  font-family: "League Spartan";
+  font-family: "League Spartan", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero--title-text__style2 {
@@ -63,7 +63,7 @@
   /* font-size: 1.8em; */
   font-size: 1.4em;
   line-height: 1em;
-  font-family: "Chunkfive";
+  font-family: "Chunkfive", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, ;
   text-transform: uppercase;
 }
 
@@ -72,5 +72,10 @@
   /* font-size: 0.381924em; */
   font-size: 0.32em;
   line-height: 1em;
-  font-family: "League Spartan";
+  font-family: "League Spartan",
+    'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
 }

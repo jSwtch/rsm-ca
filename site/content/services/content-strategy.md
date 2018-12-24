@@ -14,4 +14,4 @@ The front-end aspect of our content strategies is focused primarily on user enga
 
 ## Get Started Now
 
-The purpose of a content strategy is to develop a guide to producing and delivering content that will help entrepreneurs feel confident in the growth of their company. We are excited to work closely with you and develop a strategy that aligns with the vision you have for the future. To get started with a content strategy consultation contact us here.
+The purpose of a content strategy is to develop a guide to producing and delivering content that will help entrepreneurs feel confident in the growth of their company. We are excited to work closely with you and develop a strategy that aligns with the vision you have for the future. To get started with a content strategy consultation contact us [here](/contact).

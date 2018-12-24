@@ -15,4 +15,4 @@ Our team of marketing specialists can help pinpoint your ideal client and effect
 ## Get Started Now
 
 Navigating the world on online advertisement can be difficult. We can simplify the process
-and produce targetted ads that can connect you with your audience. We develop professional custom web ads and are happy to answer any questions you may have. If you are interested in a starting an ad new campaign contact us here.
+and produce targetted ads that can connect you with your audience. We develop professional custom web ads and are happy to answer any questions you may have. If you are interested in a starting an ad new campaign contact us [here](/contact).

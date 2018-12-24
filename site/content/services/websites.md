@@ -27,4 +27,4 @@ A great website delivers a fast, engaging, and reliable user experience. Our top
 
 ## Next Steps
 
-We can discuss each of these ten principals in depth. We have a proven "design to development" workflow, and we can promise to get you the results you expect. We build professional custom websites and are happy to answer any questions you may have. If you are interested in a custom built website contact us here.
+We can discuss each of these ten principals in depth. We have a proven "design to development" workflow, and we can promise to get you the results you expect. We build professional custom websites and are happy to answer any questions you may have. If you are interested in a custom built website contact us [here](/contact).

@@ -14,4 +14,4 @@ We use marketing strategy to refine our web copy for specific target audiences. 
 
 ## Get Started Now
 
-Good web copy starts as plain text, we can embellish by adding a story, using conversation, and invoking strong imagery to create an emotional response in the reader. Whether you are developing a news aggregate or a sales page we can help find the voice essential for communication with your customers. If you are looking to improve your web copy contact us here for a free consultation.
+Good web copy starts as plain text, we can embellish by adding a story, using conversation, and invoking strong imagery to create an emotional response in the reader. Whether you are developing a news aggregate or a sales page we can help find the voice essential for communication with your customers. If you are looking to improve your web copy contact us [here](/contact) for a free consultation.
